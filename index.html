@@ -11,29 +11,29 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <!-- meow -->
+<body class="bg-[#FFFDF8]">
     <!-- Header -->
     <header class="py-2 px-8 shadow-md shadow-black/0 dark:shadow-black/20">
         <div class="flex flex-auto justify-center items-center font-montserrat">
-            <img src="img/logo.svg" alt="logo databridge">
+            <img src="src/img/logo.svg" alt="logo databridge">
             <div class="pl-8">
-                <a href="#" class="text-3xl no-underline text-black font-bold">DataBridge</a>
+                <a href="index.html" class="text-[24px] no-underline text-black font-bold">DataBridge</a>
             </div>
             <div class="flex flex-auto space-x-20 px-20">
                 <div>
+                    <a href="index.html" class="font-semibold text-[20px] text-blue-400">Home</a>
+                </div>
+                <div>
+                    <a href="src/materi.html"
+                        class="no-underline text-[20px] hover:underline font-semibold hover:text-blue-400 text-black ">Learn</a>
+                </div>
+                <div>
+                    <a href="src/buku.html"
+                        class="no-underline hover:underline text-[20px] hover:text-blue-400 text-black font-semibold">Book</a>
+                </div>
+                <div>
                     <a href="#"
-                        class="font-semibold text-blue-400">Home</a>
-                </div>
-                <div>
-                    <a href="#" class="no-underline hover:underline font-semibold hover:text-blue-400 text-black ">Learn</a>
-                </div>
-                <div>
-                    <a href="#"
-                        class="no-underline hover:underline hover:text-blue-400 text-black font-semibold">Book</a>
-                </div>
-                <div>
-                    <a href="#" class="no-underline hover:underline hover:text-blue-400 text-black font-semibold">About
+                        class="no-underline hover:underline text-[20px] hover:text-blue-400 text-black font-semibold">About
                         Us</a>
                 </div>
             </div>
@@ -44,96 +44,276 @@
     </header>
 
     <!-- Content -->
-    <div class="px-32 py-14 font-montserrat">
-        <div class="flex flex-auto">
+    <div class="font-montserrat">
+        <!-- PROFIL -->
+        <div class="flex flex-auto px-32 py-14 ">
             <div>
-                <h1 class="text-4xl font-bold">COURSE OF DESIGN DATABASE</h1>
-                <p>Let's join us and improve your skill at design database system</p>
+                <h1 class="text-[64px] leading-relaxed font-bold">COURSE OF DESIGN DATABASE</h1>
+                <p class="text-[24px]">Let's join us and improve your skill at </p>
+                <p class="text-[24px]">design database system</p>
+                <button
+                    class="mt-10 bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded">Belajar</button>
             </div>
-            <img class="h-auto max-w-xs" src="img/preview.svg" alt="">
+            <img class="w-[700.43px] h-[600.33px] relative" src="src/img/preview.svg" alt="foto">
         </div>
 
-        <div>
-            <p>Kategori</p>
-            <p>Belajar apa hari ini?</p>
-            <p>Pilih materi yang ingin kamu pelajari lebih dulu!</p>
-            
-            <div class="flex flex-auto space-x-20">
-                <!-- 1.1 -->
-                <div class="bg-white rounded-3xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] pl-4 pr-2 pt-5">
+        <!-- KATEGORI -->
+        <div class="px-32 py-14 ">
+            <p class="text-[24px] font-bold text-blue-900">KATEGORI</p>
+            <p class="text-[40px] font-bold">Belajar apa hari ini?</p>
+            <p class="text-[24px]">Pilih materi yang ingin kamu pelajari lebih dulu!</p>
+
+            <div class="mt-10 grid grid-cols-3 gap-14">
+                <!-- 1 -->
+                <div class="bg-white rounded-3xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] px-4 py-5">
                     <div>
-                        <img class="object-" src="img/logo1.svg" alt="">
+                        <img class="object-" src="src/img/logo1.svg" alt="">
                     </div>
+                    <div class="flex flex-auto justify-center items-end">
+                        <div class="pl-2">
+                            <p class="font-bold text-[20px] text-blue-900">PENGANTAR BASIS DATA</p>
+                            <p class="text-[16px] pt-3">Mengetahui definisi-definisi pada desain basis data dan istilah.
+                            </p>
+                        </div>
+                        <img class="pl-2" src="/src/img/arrow.svg" alt="">
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="bg-white rounded-3xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] px-4 py-5">
+                    <div>
+                        <img src="src/img/logo2.svg" alt="">
+                    </div>
+                    <div class="flex flex-auto justify-center items-end">
+                        <div class="pl-2">
+                            <p class="font-bold text-[20px] text-blue-900">STRUCTURE QUERY LANGUAGE</p>
+                            <p class="text-[16px] pt-3">Belajar tentang Structure Query Language</p>
+                        </div>
+                        <img src="/src/img/arrow.svg" alt="">
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="bg-white rounded-3xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] px-4 py-5">
+                    <div>
+                        <img class="object-" src="src/img/logo3.svg" alt="">
+                    </div>
+                    <div class="flex flex-auto justify-center items-end">
+                        <div class="pl-2">
+                            <p class="font-bold text-[20px] text-blue-900">DATA DEFINITION LANGUAGE</p>
+                            <p class="text-[16px] pt-3">Belajar tentang Data Definition Language pada SQL.</p>
+                        </div>
+                        <img class="pl-2" src="/src/img/arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center py-20">
+            <a href="src/materi.html" class="no-underline text-white">
+                <div
+                    class="flex flex-auto bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded space-x-2">
+                    <button>Show More</button>
+                    <img class="w-[23.10px] h-[20px]" src="src/img/arrow2.svg" alt="">
+                </div>
+            </a>
+        </div>
+
+        <!-- BOOK LIST -->
+        <div class="bg-blue-900 px-32 py-14 ">
+            <p class="text-[24px] font-bold text-blue-200 pt-4">BOOK LIST</p>
+            <p class="text-[40px] font-bold text-white">Popular Book</p>
+            <p class="text-[24px] text-white">Buku yang paling sering dicari!</p>
+            <div class="grid grid-cols-3 gap-14 pb-20 mt-10">
+                <!-- 1 -->
+                <div class="bg-white flex flex-auto py-4 px-4 rounded-xl">
+                    <img src="src/img/ebook4.svg" alt="">
                     <div class="pl-4">
                         <p class="font-bold text-blue-900">EBOOK</p>
                         <div>
-                            <p class="font-bold">Database Design</p>
-                            <p class="text-sm font-medium">And Relational Theory</p>
+                            <p class="font-bold">Database System</p>
+                            <p class="text-sm font-medium">A Pragmatic Approach</p>
                         </div>
                         <p class="text-xs  pt-3">a textbook introduction to database systems theory and practice</p>
                     </div>
                 </div>
-
-                <!-- 1.2 -->
-                <div class="bg-white rounded-3xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] pl-4 pr-2 py-5">
-                    <div>
-                        <img src="img/logo2.svg" alt="">
+                <!-- 2 -->
+                <div class="bg-white flex flex-auto py-4 px-4 rounded-xl">
+                    <img src="src/img/ebook5.svg" alt="">
+                    <div class="pl-4">
+                        <p class="font-bold text-blue-900">EBOOK</p>
+                        <div>
+                            <p class="font-bold">SQL COMPUTER</p>
+                            <p class="text-sm font-medium">For Beginner</p>
+                        </div>
+                        <p class="text-xs  pt-3">a textbook introduction to database systems theory and practice</p>
                     </div>
+                </div>
+                <!--3 -->
+                <div class="bg-white flex flex-auto py-4 px-4 rounded-xl">
+                    <img src="src/img/ebook6.svg" alt="">
                     <div class="pl-4">
                         <p class="font-bold text-blue-900">EBOOK</p>
                         <div>
                             <p class="font-bold">DATABASE</p>
-                            <p class="text-sm font-medium">The Complete Book</p>
+                            <p class="text-sm font-medium">A practical Approach</p>
                         </div>
-                        <p class="text-xs pt-3">a textbook introduction to database systems theory and practice</p>
+                        <p class="text-xs  pt-3">a textbook introduction to database systems theory and practice</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center pb-20">
+                <a href="src/buku.html" class="no-underline text-white">
+                    <div
+                        class="flex flex-auto bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded space-x-2">
+                        <button>Read More</button>
+                        <img class="w-[23.10px] h-[20px]" src="src/img/arrow2.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- INFO -->
+        <div class="px-32 py-14 ">
+            <p class="text-[24px] font-bold text-blue-900 pt-4">INFO</p>
+            <p class="text-[40px] font-bold ">About Us</p>
+            <p class="text-[24px]">Apa itu DataBridge dan siapa pengembangnya?</p>
+            <div class="flex flex-auto justify-center items-center mt-7">
+                <img src="src/img/aboutus.svg" alt="">
+                <div class="pl-10">
+                    <p class="text-[40px] font-bold text-blue-900">DataBridge</p>
+                    <p class="text-[20px]">DataBridge adalah suatu website yang menyediakan suatu materi dan beberapa
+                        buku pembelajaran pada bidang Database System. Website ini dibuat sebagai syarat penyelesaian
+                        tugas akhir mata kuliah MPSB. Website ini dikembangkan oleh 1) Delisya Jayadi, 2) Dian Nurita
+                        Hasanah, dan 3) Salma Novita</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- REVIEW -->
+        <div class="bg-blue-900 px-32 py-14 ">
+            <p class="text-[24px] font-bold text-blue-200 pt-4 mt-10">REVIEW</p>
+            <p class="text-[40px] font-bold text-white">What people think about DataBridge?</p>
+            <p class="text-[24px] text-white">Kata mereka yang pernah belajar di DataBridge</p>
+            <div class="grid grid-cols-3 gap-14 pb-20 mt-10 justify-center items-center">
+                <!-- 1 -->
+                <div>
+                    <div class="w-[344.40px] h-[317.01px] p-[0px] flex-col justify-start items-center inline-flex">
+                        <div class="h-[317.01px] p-[25px] bg-white flex-col justify-start items-center flex">
+                            <div
+                                class="self-stretch h-[217.01px] p-[30px] flex-col justify-start items-center gap-[15px] flex">
+                                <img src="src/img/stars.png" alt="">
+                                <div
+                                    class="w-[159px] text-center text-neutral-500 text-[14px] font-normal leading-tight tracking-wide">
+                                    Slate helps you see <br />how many more days <br />you need to work to <br />reach
+                                    your financial <br />goal for the month <br />and year.</div>
+                            </div>
+                            <div class="h-[50px] p-[0px] justify-start items-center gap-[15px] inline-flex">
+                                <div class="w-[50px] h-[50px] p-[0px] justify-center items-center flex">
+                                    <img class="w-[50px] h-[50px] rounded-full" src="src/img/icon.png" />
+                                </div>
+                                <div class="p-[0px] flex-col justify-start items-start inline-flex">
+                                    <div class="text-sky-500 text-[14px] font-bold leading-normal tracking-wide">Regina
+                                        Miles</div>
+                                    <div class="text-slate-800 text-[12px] font-normal leading-none tracking-wide">
+                                        Designer</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 1.3 -->
-                <div class="bg-white rounded-3xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] pl-4 pr-2 py-5">
-                    <div class="">
-                        <div>
-                            <img src="img/logo3.svg" alt="">
-                        </div>
-                        <div class="pl-2">
-                            <p class="font-bold text-blue-900">EBOOK</p>
-                            <div>
-                                <p class="font-bold">DATABASE MODEL</p>
-                                <p class="text-sm font-medium">Logical Design</p>
+                <!-- 2 -->
+                <div>
+                    <div class="w-[344.40px] h-[317.01px] p-[0px] flex-col justify-start items-center inline-flex">
+                        <div class="h-[317.01px] p-[25px] bg-white flex-col justify-start items-center flex">
+                            <div
+                                class="self-stretch h-[217.01px] p-[30px] flex-col justify-start items-center gap-[15px] flex">
+                                <img src="src/img/stars.png" alt="">
+                                <div
+                                    class="w-[159px] text-center text-neutral-500 text-[14px] font-normal leading-tight tracking-wide">
+                                    Slate helps you see <br />how many more days <br />you need to work to <br />reach
+                                    your financial <br />goal for the month <br />and year.</div>
                             </div>
-                            <p class="text-xs  pt-3">a textbook introduction to database systems theory and practice</p>
+                            <div class="h-[50px] p-[0px] justify-start items-center gap-[15px] inline-flex">
+                                <div class="w-[50px] h-[50px] p-[0px] justify-center items-center flex">
+                                    <img class="w-[50px] h-[50px] rounded-full" src="src/img/icon.png" />
+                                </div>
+                                <div class="p-[0px] flex-col justify-start items-start inline-flex">
+                                    <div class="text-sky-500 text-[14px] font-bold leading-normal tracking-wide">Regina
+                                        Miles</div>
+                                    <div class="text-slate-800 text-[12px] font-normal leading-none tracking-wide">
+                                        Designer</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="img/arrow.svg" alt="">
+                </div>
+
+                <!-- 3 -->
+                <div>
+                    <div class="w-[344.40px] h-[317.01px] p-[0px] flex-col justify-start items-center inline-flex">
+                        <div class="h-[317.01px] p-[25px] bg-white flex-col justify-start items-center flex">
+                            <div
+                                class="self-stretch h-[217.01px] p-[30px] flex-col justify-start items-center gap-[15px] flex">
+                                <img src="src/img/stars.png" alt="">
+                                <div
+                                    class="w-[159px] text-center text-neutral-500 text-[14px] font-normal leading-tight tracking-wide">
+                                    Slate helps you see <br />how many more days <br />you need to work to <br />reach
+                                    your financial <br />goal for the month <br />and year.</div>
+                            </div>
+                            <div class="h-[50px] p-[0px] justify-start items-center gap-[15px] inline-flex">
+                                <div class="w-[50px] h-[50px] p-[0px] justify-center items-center flex">
+                                    <img class="w-[50px] h-[50px] rounded-full" src="src/img/icon.png" />
+                                </div>
+                                <div class="p-[0px] flex-col justify-start items-start inline-flex">
+                                    <div class="text-sky-500 text-[14px] font-bold leading-normal tracking-wide">Regina
+                                        Miles</div>
+                                    <div class="text-slate-800 text-[12px] font-normal leading-none tracking-wide">
+                                        Designer</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- MORE INFORMATION -->
+        <div class="mt-32 justify-center items-center text-center px-32 py-14 ">
+            <p class="text-[40px] text-blue-900 font-bold">More Information</p>
+            <p class="text-[14px]">Subscribe kami menggunakan email dan dapatkan informasi terbaru serta tips belajar
+                seputar database melalui emailmu! </p>
+            <div class="flex flex-auto mx-60 mt-5 mb-16">
+                <input type="text"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Email Anda">
+                <button class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded">Subscribe</button>
+            </div>
+        </div>
+
     </div>
 
     <!-- Footer -->
-    <footer class=" px-16 py-10 font-montserrat">
+    <footer class="font-montserrat shadow-[0px_0px_8px_1px_#00000024]">
         <div class="flex flex-wrap justify-center">
             <div class="flex flex-auto">
-                <img src="img/logo.svg" alt="logo">
+                <img src="src/img/hiasan.png" alt="logo">
             </div>
-            <div>
-                <p class="font-bold text-blue-900">Sosial Media</p>
+            <div class="mr-36 items-start flex flex-col justify-center">
+                <p class="font-bold text-blue-900 text-[24px]">Sosial Media</p>
                 <p class="text-gray-500">Ikuti kami di Sosial Media</p>
                 <div>
                     <div class="flex flex-auto space-x-3 mt-2">
-                        <a href="#"><img src="img/facebook.svg" alt=""></a>
-                        <a href="#"><img src="img/instagram.svg" alt=""></a>
-                        <a href="#"><img src="img/twitter.svg" alt=""></a>
+                        <a href="#"><img src="src/img/facebook.svg" alt=""></a>
+                        <a href="#"><img src="src/img/instagram.svg" alt=""></a>
+                        <a href="#"><img src="src/img/twitter.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="font-bold text-gray-500 text-center">
-            Made With Love By DDS All Right Reserved
+        <div class="py-2 font-bold text-black text-center bg-blue-300">
+            Made With Love By DDS. All Right Reserved.
         </div>
-        <!-- meow -->
     </footer>
     <!-- <img class="bg-fixed" style="background-image: url(./hiasan1.svg)" alt=""> -->
 </body>
